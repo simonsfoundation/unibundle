@@ -55,7 +55,7 @@ fs.emptyDir(path.resolve(process.cwd(), userConfig.buildDir), () => {
       quiet: true
     })
 
-    server.listen(8080, 'localhost', e => {
+    server.listen(8080, e => {
       console.log(
         chalk.green(`unibundle`),
         chalk.gray('client bundle served at'),
