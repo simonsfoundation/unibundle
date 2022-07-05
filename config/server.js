@@ -9,6 +9,9 @@ module.exports = function server (production) {
 
   return {
     mode: production ? 'production' : 'development',
+    optimization: {
+      minimize: false,
+    },
     target: 'node',
     performance: { hints: false },
     devtool: 'source-map',

@@ -29,6 +29,9 @@ module.exports = function client (production) {
 
   return {
     mode: production ? 'production' : 'development',
+    optimization: {
+      minimize: false,
+    },
     target: 'web',
     performance: { hints: false },
     devtool: 'source-map',
